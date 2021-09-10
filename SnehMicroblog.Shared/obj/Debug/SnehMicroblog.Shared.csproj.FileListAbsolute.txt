@@ -1,0 +1,11 @@
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\bin\Debug\SnehMicroblog.Shared.dll
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\bin\Debug\SnehMicroblog.Shared.pdb
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.csproj.CoreCompileInputs.cache
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.dll
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.pdb
+C:\Users\snehnandu\Desktop\New Project\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.csprojAssemblyReference.cache
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.Shared\bin\Debug\SnehMicroblog.Shared.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.Shared\bin\Debug\SnehMicroblog.Shared.pdb
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.csproj.CoreCompileInputs.cache
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.Shared\obj\Debug\SnehMicroblog.Shared.pdb

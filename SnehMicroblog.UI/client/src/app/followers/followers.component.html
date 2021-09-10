@@ -1,0 +1,85 @@
+<div *ngIf = "!loggedIn">
+    You should be logged in to the veiw page.....
+    <a routerLink = "/login" roterLinkActive = "active-link">Login</a>
+</div>
+
+
+<div *ngIf = "loggedIn">
+    <app-logout></app-logout>
+    <div class="row">
+        <div class="col-sm-3 sidebar" >
+          <app-dashboard></app-dashboard>
+        </div>
+
+        <div class="col-sm-6 layout">
+            <div *ngIf = "users" class="page">
+                <div class="feed">
+                    <div class="feed__header" >
+                        <h2>Followers</h2>
+                    </div>                   
+                    <div *ngFor = "let user of users">
+                          <div class="post" >
+                            <div class="post__avatar">
+                                <img alt="" [src] = "PhotoFilePath + user.Image">
+                            </div>    
+                            <div class="post__body">
+                              <div class="post__header">
+                                <div class="post__headerText">
+                                  <h2>
+                                    {{user.FirstName}} {{user.LastName}}
+                                  </h2>
+                                </div>
+                                <div class="post__headerDescription">
+                                  <p class="email">{{user.Email}}</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>                 
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 news">
+            <div class="widgets"> 
+                <div class="widgets__widgetContainer">
+                    <h2>What's happening</h2>
+                </div>
+
+                  <div class="widgets_innerContainer">
+                    <h5>News</h5>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <p>Jammu and Kashmir police register FIR after two low-intensity explosions take place at Indian Air Force base</p>
+                        </div>
+                        <div class="col-sm-4">
+                          <img src = "../../assets/Jammu.png" alt="Jammu">
+                        </div>
+                      </div>
+                    </div>              
+                  </div>
+
+                  <div class="widgets_innerContainer">
+                    <h5>UEFA European Championship</h5>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <p>Italy, Denmark, Czech, Belgium make it to the quarter finals of EURO 2021</p>
+                        </div>
+                        <div class="col-sm-4">
+                          <img src = "../../assets/euros.jfif" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="widgets_footer">
+                    
+                  </div>
+                </div>
+        </div>
+   </div>
+   </div>
+

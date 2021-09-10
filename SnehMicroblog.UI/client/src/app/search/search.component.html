@@ -1,0 +1,129 @@
+<div *ngIf="!loggedIn">
+    You should be logged in to view this page.....
+    <a routerLink="/login" routerLinkActive="active-link">Login</a> 
+</div>
+
+<div  *ngIf="loggedIn" class="page">
+  <app-logout></app-logout>
+  <div class="row">
+      <div class="col-sm-3 sidebar" >
+        <app-dashboard></app-dashboard>
+      </div>
+
+      <div class="col-sm-6 layout">
+        <div class="feed">
+          <div class="feed__header" >
+            <form #searchForm="ngForm" (ngSubmit)="SearchUser()" class="searchbar">
+              <input type="text" name="SearchString" id="SearchString"  [(ngModel)]="SearchFilter.SearchString" placeholder=" Search">
+              <button type="submit"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+            <br>
+              <div id="tabs" >
+                <input type="radio" name="search" id="toggle-people" value="people"  [(ngModel)]="SearchFilter.SearchOption"/>
+                <button class="btn-primary"  (click)="Option('people')"><label for="toggle-people">People</label></button>
+                <input type="radio" name="search" value="posts" id="toggle-posts" [(ngModel)]="SearchFilter.SearchOption"/>
+                <button class="btn-primary" (click)="Option('posts')"><label for="toggle-posts">Posts</label> </button>
+              </div>
+            </form>
+          </div> 
+
+          <div *ngIf="users">
+            <div *ngFor="let user of users">
+              <div class="row following_user">
+                  <div class="col-sm-9">
+                      <div class="post" >
+                          <div class="post__avatar">
+                            <img src="http://localhost:59901/Photos/{{user.Image}}" alt="Profile pic"/>                             
+                          </div>    
+                          <div class="post__body">
+                            <div class="post__header">
+                              <div class="post__headerText">
+                                <h2>
+                                  {{user.FirstName}} {{user.LastName}}
+                                </h2>
+                              </div>
+                              <div class="post__headerDescription">
+                                <p class="email">{{user.Email}}</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-3 actions">
+                    <button *ngIf="!user.IsFollowed" class="btn btn-success" (click)="Follow(user.UserId)">Follow</button>
+                    <button *ngIf="user.IsFollowed" class="btn btn-danger" (click)="unFollow(user.UserId)">Unfollow</button>
+               </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="tweets">
+            <div *ngFor="let tweet of tweets">
+              <div class="post following_user" >
+                <div class="post__avatar">
+                  <img src="http://localhost:59901/Photos/{{tweet.Image}}" alt="Profile pic"/>
+                </div>    
+                <div class="post__body row">
+                  <div class="col-sm-12">
+                    <div class="post__header">
+                      <div class="post__headerText">
+                        <h2>
+                          {{tweet.Username}}
+                        </h2>
+                      </div>
+                      <div class="post__headerDescription">
+                        <p>{{tweet.Message}}</p>
+                        <p class="date">Created At : {{tweet.CreatedAt | date}}</p>
+                      </div>
+                    </div>
+                  </div>        
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>         
+          
+      </div>
+
+      <div class="col-sm-3 news">
+        <div class="widgets"> 
+            <div class="widgets__widgetContainer">
+                <h2>What's happening</h2>
+            </div>
+
+              <div class="widgets_innerContainer">
+                <h5>News</h5>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p>Jammu and Kashmir police register FIR after two low-intensity explosions take place at Indian Air Force base</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <img src = "../../assets/Jammu.png" alt="Jammu">
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="widgets_innerContainer">
+                <h5>UEFA European Championship</h5>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p>Italy, Denmark, Czech, Belgium make it to the quarter finals of EURO 2021</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <img src = "../../assets/euros.jfif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="widgets_footer">
+                
+              </div>
+            </div>
+     </div>
+  </div>
+
+

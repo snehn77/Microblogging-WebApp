@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebarOption .material-icons,
+.fa-twitter {
+  padding: 20px;
+}
+
+
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: white;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOption a {
+  font-weight: 300;
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+
+.sidebarOption:hover {
+  background-color: #e6ecf0;
+  border-radius: 30px;
+  color: #50b7f5;;
+  transition: color 100ms ease-out;
+}
+
+.sidebarOption.active {
+  color: #50b7f5;;
+}
+
+.sidebar__tweet {
+  width: 100%;
+  background-color: #50b7f5;;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 175px;
+}
+
+.card h1{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+}
+.card img {
+  height: 150px;
+  width: 100%;
+}
+
+.card p {
+  color: grey;
+  font-size: 15px;
+  margin: 0;
+}

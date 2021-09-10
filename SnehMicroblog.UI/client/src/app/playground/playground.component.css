@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .sidebar{
+    flex: 0.2;
+    min-width: 300px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .feed {
+    flex: 0.5;
+    min-width: fit-content;
+    overflow-y: scroll ;
+  }
+  
+  .feed__header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid #e6ecf0;
+    text-align: center;
+  }
+  
+  .feed__header h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .homepage{
+    border: 1px solid  #e6ecf0;
+  }
+  .feed::-webkit-scrollbar {
+    display: none ;
+  }
+  
+  .feed {
+    -ms-overflow-style: none ;
+    scrollbar-width: none ;
+  }
+  
+  
+  
+  .addTweet{
+    background-color: #50b7f5;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 335px;
+  }
+
+
+  .addTweet:hover{
+    background-color: #3cb0f8;
+  }
+  
+  /* post */
+  .post__avatar img {
+    border-radius: 50%;
+    height: 80px;
+    width: 90px;
+    border:1px solid #e6ecf0;
+  }
+  
+  .post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+  
+  .post:hover{
+    background-color: #e6ecf0;
+    transition: color 100ms ease-out;
+    cursor: pointer;
+  }
+  
+  .post__footer {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  
+  .post__headerText h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .post__headerDescription {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  .post__headerDescription .date {
+    font-size: 13px;
+    color: grey;
+  }
+  .post__body {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .post__avatar {
+    padding: 20px;
+  }
+
+  .widgets {
+    flex: 0.3;
+  }
+  
+  
+  .widgets__widgetContainer h2 {
+    font-size: 20px;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+    
+  .widgets__widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: #e6ecf0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #f5f8fa;
+    width: 335px;
+  }
+  
+  .widgets_innerContainer{
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #e6ecf0;
+    border-bottom: 1px solid #f5f8fa;
+    width: 335px;
+  }
+
+  .widgets_innerContainer h5 {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .widgets_innerContainer p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .sideImage{
+    border-radius: 20px ;
+    margin-left: 5px ;
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .widgets_footer{
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #e6ecf0;
+    border-bottom: 1px solid #f5f8fa ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 335px;
+  }
+
+
+  .widgets_innerContainer:hover{
+    background-color: #dbdee0 ;
+    transition: color 100ms ease-out;
+    cursor: pointer;
+  }
+
+  .modal-dialog{
+    margin-left: 200px;
+    height: 500px;
+    width: 900px;
+  }
+
+  .modal-title{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .tweet_label{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .modal-body textarea{
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .model-button{
+    margin-left: 720px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    
+  }
+
+  .close{
+    margin-right: 1px;
+    color: black;
+  }
+
+
+  .button-actions{
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .actions .bi{
+    color: black;
+    height: 20px;
+    width: 20px;
+  }
+
+  .actions_like .bi{
+    color: white;
+    height: 22px;
+    width: 22px;
+  }
+
+
+

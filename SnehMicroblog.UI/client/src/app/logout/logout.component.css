@@ -1,0 +1,14 @@
+.navbar {
+    border-bottom: 1px solid #e6ecf0;
+    background-color: #1f2833;
+}
+
+a{
+    color: white;
+}
+
+
+a:hover{
+    cursor: pointer;
+    color: #50b7f5;
+}

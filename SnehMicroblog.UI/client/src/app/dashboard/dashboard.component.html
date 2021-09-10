@@ -1,0 +1,52 @@
+<div *ngIf = "!user.loggedIn">
+    You should be logged in to the veiw page.....
+    <a routerLink = "/login" roterLinkActive = "active-link">Login</a>
+</div>
+
+<div *ngIf = "user.loggedIn" class="sidebar_option">
+  <div class="sidebar">
+    <div class="card">
+      <img [src]=PhotoFilePath alt="Profile Picture" title="Profile Picture">
+      <h1>{{Username}}</h1>
+        <p>{{PhoneNumber}}
+        <br>{{Country}}</p>
+    </div>
+    
+    <div class="sidebarOption">
+        <span class="material-icons">
+            home
+        </span>
+        <a  routerLink = "/playground" roterLinkActive = "active-link">Home</a>
+    </div>
+
+    <div class="sidebarOption">
+        <span class="material-icons">
+            people
+        </span>
+        <a routerLink = "/Followers" roterLinkActive = "active-link">Followers ({{user.followers}})</a>
+    </div>
+
+    <div class="sidebarOption">
+        <span class="material-icons">
+            people
+        </span>
+        <a routerLink = "/Following" roterLinkActive = "active-link">Following ({{user.following}})</a>
+    </div>
+
+    <div class="sidebarOption">
+        <span class="material-icons">
+            search
+        </span>
+        <a routerLink = "/Search" roterLinkActive = "active-link">Search</a>
+    </div>
+
+    <div class="sidebarOption">
+        <span class="material-icons">
+            analytics
+        </span>
+         <a routerLink = "/analytics" roterLinkActive = "active-link">Analytics</a>
+    </div>
+
+</div>
+
+</div>

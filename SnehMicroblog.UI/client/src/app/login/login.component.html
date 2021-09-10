@@ -1,0 +1,45 @@
+<div class="login-page">
+<div class="signup-form">
+    <div class="container">
+        <div>
+            <h1 class="header">Login</h1>
+            <form #loginForm = "ngForm" (ngSubmit) = "login()" class="well form-horizontal" ngNativeValidate>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control" [(ngModel)]="userLogin.email" name="email" placeholder="Enter Email Address" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="password" class="form-control" [(ngModel)]="userLogin.password" name="password"placeholder="Enter Password" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <span class="comment-form-control-wrap-submit input-group-addon" (mouseenter) = "showValidationMessages = true" (mouseleave) = "showValidationMessages = false">
+                                </span>
+                                <div class="input-group">
+                                    <input type="submit" name="submit" id="submit" class="btn btn-lg btn-success btn-block text-centre" value="Login" [disabled] = "loginForm.invalid"> 
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;font-size: 20px;margin-top: 10px;">OR</h5>
+                                </div>
+                                <div class="input-group">
+                                    <input class="btn btn-lg btn-success btn-block" routerLink="/signup"  value="Sign Up" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt20" *ngIf = "invalidLoginCredentials">
+                            <div class="col-md-4 col-md-offset-4">
+                                <h5 class="bg-danger text-center">invalid Login Credentials</h5>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

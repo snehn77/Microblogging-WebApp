@@ -1,0 +1,67 @@
+<div *ngIf="!loggedIn">
+    You should be logged in to view this page.....
+    <a routerLink="/login" routerLinkActive="active-link">Login</a> 
+</div>
+
+<div *ngIf="loggedIn" class="page">
+    <app-logout></app-logout>
+    <div class="row" *ngIf="analysis">
+        <div class="col-sm-3 sidebar" >
+          <app-dashboard></app-dashboard>
+        </div>
+
+        <div class="col-sm-4 news">
+            <div class="widgets"> 
+                <div class="widgets__widgetContainer">
+                    <h2>Most Tweets By</h2>
+                </div>
+
+                  <div class="widgets_innerContainer">
+                    <div class="container">
+                        <p>{{analysis.MostTweetsBy}}</p>
+                    </div>
+                </div>              
+            </div>   
+            
+            <div class="widgets"> 
+                <div class="widgets__widgetContainer">
+                    <h2>Total Tweets Today</h2>
+                </div>
+
+                  <div class="widgets_innerContainer">
+                    <div class="container">
+                        <p>{{analysis.TotalTweetsToday}}</p>
+                    </div>
+                </div>              
+            </div> 
+        </div>
+
+        <div class="col-sm-5 news_next">
+            <div class="widgets"> 
+                <div class="widgets__widgetContainer">
+                    <h2>Most Liked Tweet</h2>
+                </div>
+
+                  <div class="widgets_innerContainer">
+                    <div class="container">
+                        <p>{{analysis.MostLiked}}</p>
+                    </div>
+                </div>              
+            </div>   
+            
+            <div class="widgets"> 
+                <div class="widgets__widgetContainer">
+                    <h2>Most Trending Hashtag</h2>
+                </div>
+
+                  <div class="widgets_innerContainer">
+                    <div class="container">
+                        <p>{{analysis.MostTrending}}</p>
+                    </div>
+                </div>              
+            </div> 
+        </div>
+</div>
+
+
+</div>

@@ -1,0 +1,14 @@
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\SnehMicroblog.DAL.dll.config
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\SnehMicroblog.DAL.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\SnehMicroblog.DAL.pdb
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\EntityFramework.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\SnehMicroblog.Shared.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\SnehMicroblog.Shared.pdb
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\EntityFramework.xml
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\obj\Debug\SnehMicroblog.DAL.csproj.AssemblyReference.cache
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\obj\Debug\SnehMicroblog.DAL.csproj.CoreCompileInputs.cache
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\obj\Debug\SnehMicroblog.DAL.csproj.CopyComplete
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\obj\Debug\SnehMicroblog.DAL.dll
+C:\Users\snehn\Desktop\Final Projecty\SnehMicroblogging.Application\SnehMicroblog.DAL\obj\Debug\SnehMicroblog.DAL.pdb

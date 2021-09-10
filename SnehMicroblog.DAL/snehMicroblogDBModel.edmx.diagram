@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6780b39ce50843e2935833417e516f20" Name="Diagram1">
+        <EntityTypeShape EntityType="SnehMicroblogDbModel.Follow" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnehMicroblogDbModel.LikeTweet" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnehMicroblogDbModel.Tag" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnehMicroblogDbModel.Tweet" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SnehMicroblogDbModel.User" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_Follow_dbo_User_Followed_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_Follow_dbo_User_Follower_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_LikeTweet_dbo_Tweet_TweetID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_LikeTweet_dbo_User_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_Tag_dbo_Tweet_TweetID" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_Tag_Tweet" ManuallyRouted="false" />
+        <AssociationConnector Association="SnehMicroblogDbModel.FK_dbo_Tweet_dbo_User_UserID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
